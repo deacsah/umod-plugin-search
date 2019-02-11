@@ -14,7 +14,7 @@ $hooks = [
 	'CanBeTargeted',
 	'OnItemRepair'
 ];
-$plugins = scandir('/var/www/opperbazen.nl/public_html/rust/plugins');
+$plugins = scandir('plugins');
 foreach ($plugins as $plugin) {
 	if (!in_array($plugin, ['.','..','index.php'])) {
 		$content = file_get_contents("plugins/".$plugin);
