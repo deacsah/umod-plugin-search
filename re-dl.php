@@ -17,7 +17,7 @@ foreach ($plugins as $plugin) {
                 fclose($fp);
                 echo "Plugin <strong>$plugin</strong> was succesfully re-downloaded :) <br/>";
             }
-            sleep(2);
+            sleep(2); // used to throttle the amount of requests
         }
     }
 }
